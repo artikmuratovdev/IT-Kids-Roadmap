@@ -22,7 +22,8 @@ export async function serverClient() {
 
 /** Service role — RLS'ni chetlab o'tadi. Faqat server action ichida ishlating. */
 export function adminClient() {
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!key) throw new Error("SUPABASE_SERVICE_ROLE_KEY sozlanmagan");
+  // Yangi "secret" kalit (sb_secret_...) yoki eski "service_role" kalit
+  const key = process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!key) throw new Error("SUPABASE_SECRET_KEY sozlanmagan");
   return createClient(SUPABASE_URL, key, { auth: { persistSession: false } });
 }
