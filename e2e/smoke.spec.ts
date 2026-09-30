@@ -80,3 +80,33 @@ test("taqdimot rejimi va interaktiv ko'rgazmalar", async ({ page }) => {
   await page.goto("/");
   await page.screenshot({ path: "test-results/00-home.png", fullPage: true });
 });
+
+test("4-oy o'yin namunalari ishlaydi", async ({ page }) => {
+  await page.goto("/darslar/m4-w13-d1");
+  const canvas = page.getByLabel("Snake o'yini");
+  await expect(canvas).toBeVisible();
+  await page.getByRole("button", { name: "▶ Start" }).click();
+  await canvas.press("ArrowDown");
+  await expect(page.getByTestId("game-score")).toContainText("Ball");
+  await page.screenshot({ path: "test-results/09-snake.png", fullPage: true });
+
+  await page.goto("/darslar/m4-w14-d2");
+  const dino = page.getByLabel("Dino (ayiq bilan) o'yini");
+  await page.getByRole("button", { name: "▶ Start" }).click();
+  await dino.press(" ");
+  await page.waitForTimeout(1500);
+  await expect(page.getByTestId("game-score")).not.toHaveText("⭐ Ball: 0");
+  await page.screenshot({ path: "test-results/10-dino.png" });
+
+  for (const [id, name, shot] of [
+    ["m4-w15-d1", "Balloon shooter o'yini", "11-balloon"],
+    ["m4-w16-d1", "Mole strike o'yini", "12-mole"],
+  ]) {
+    await page.goto(`/darslar/${id}`);
+    await expect(page.getByLabel(name)).toBeVisible();
+    await page.getByRole("button", { name: "▶ Start" }).click();
+    await page.waitForTimeout(1200);
+    await expect(page.getByText(/⏱ \d+ s/)).toBeVisible();
+    await page.screenshot({ path: `test-results/${shot}.png` });
+  }
+});

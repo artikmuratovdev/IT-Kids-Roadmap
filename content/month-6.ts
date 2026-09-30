@@ -56,7 +56,7 @@ export const month6: WeekDraft[] = [
         quiz: [
           { q: "Hosting nima?", options: ["Sayt fayllari turadigan internetdagi server", "Brauzer", "Rasm dasturi", "Parol"], correct: 0 },
           { q: "Domen nima?", options: ["Sayt manzili", "Rasm", "Shrift", "Teg"], correct: 0 },
-          { q: "Qaysi biri bepul hosting?", options: ["Netlify", "Photoshop", "Excel", "Word"], correct: 0 },
+          { q: "Qaysi biri bepul hosting?", options: ["Netlify", "Scratch", "Excel", "Word"], correct: 0 },
           { q: "Bosh sahifa fayli qanday nomlanishi kerak?", options: ["index.html", "home.doc", "sayt.png", "main.mp4"], correct: 0 },
           { q: "Saytni joylashdan oldin nima tekshiriladi?", options: ["Shaxsiy ma'lumot yo'qligi va havolalar", "Kompyuter narxi", "Monitor o'lchami", "Hech narsa"], correct: 0 },
           { q: "`ali.github.io` — qanday domen?", options: ["Bepul subdomen", "Pullik .uz domen", "Email", "Fayl"], correct: 0 },
@@ -69,7 +69,7 @@ export const month6: WeekDraft[] = [
         visual: "code",
         visualPreset: "media",
         slides: [
-          { emoji: "🖼️", title: "Loyiha", points: ["Photoshop, Paint, AI va Canva ishlaringizdan **onlayn galereya**.", "Kamida **8 ta rasm**, har biri nom bilan.", "Internetga joylangan bo'lsin!"] },
+          { emoji: "🖼️", title: "Loyiha", points: ["Paint, AI rasm, Canva ishlaringiz va Scratch o'yinlaringiz skrinshotlaridan **onlayn galereya**.", "Kamida **8 ta rasm**, har biri nom bilan.", "Internetga joylangan bo'lsin!"] },
           { emoji: "▦", title: "Galereya CSS", points: ["`display: grid;` + `grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));`", "Bu — ekran kengligiga qarab ustunlar soni **o'zi** o'zgaradi!", "`object-fit: cover;` — rasmlar bir xil o'lchamda."], code: ".galereya {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n  gap: 12px;\n}\n.galereya img {\n  width: 100%;\n  height: 180px;\n  object-fit: cover;\n  border-radius: 12px;\n}" },
           { emoji: "✨", title: "Effektlar", points: ["Hover: `transform: scale(1.05)`.", "`transition: .3s` — silliq.", "Rasm ostida `<figcaption>` — izoh."] },
           { emoji: "🌍", title: "Joylash", points: ["Galereyani portfolio saytingizga qo'shing.", "Netlify'da qayta joylang.", "Havolani sinf chatiga (o'qituvchi orqali) yuboring."] },
@@ -81,7 +81,7 @@ export const month6: WeekDraft[] = [
           "Menyuga \"Galereya\" havolasini qo'shing.",
           "Saytni qayta joylang va telefonda tekshiring.",
         ],
-        homework: "Galereyaga \"Oldin/Keyin\" bo'limini qo'shing: Photoshop retush ishingizning asl va tayyor holati yonma-yon.",
+        homework: "Galereyaga \"Mening o'yinlarim\" bo'limini qo'shing: 4 ta Scratch o'yiningiz (Snake, Dino, Balloon shooter, Mole strike) skrinshoti va Scratch havolalari.",
         rubric: ["8+ rasm, izohlar bilan", "Moslashuvchan grid", "Hover effekt", "Menyuda havola", "Internetga joylangan"],
         quiz: [
           { q: "Rasmlar bir xil o'lchamda kesilib ko'rinishi uchun?", options: ["object-fit: cover;", "font-size: 12px;", "display: none;", "color: red;"], correct: 0 },
@@ -192,7 +192,7 @@ export const month6: WeekDraft[] = [
         kind: "project",
         goals: ["6 oyda o'rganilganlarni tahlil qilish", "Yakuniy loyiha g'oyasini tanlash", "Loyiha rejasi va jadvalini tuzish"],
         slides: [
-          { emoji: "🧭", title: "6 oyda nimalarni o'rgandik?", points: ["🖥️ Kompyuter, Word, PowerPoint, Excel.", "🎬 CapCut va AI (matn, rasm, video, musiqa).", "🐱 Scratch dasturlash.", "🎨 Photoshop.", "🌐 HTML/CSS va hosting."] },
+          { emoji: "🧭", title: "6 oyda nimalarni o'rgandik?", points: ["🖥️ Kompyuter, Word, PowerPoint, Excel.", "🎬 CapCut va AI (matn, rasm, video, musiqa).", "🐱 Scratch bloklari.", "🎮 Scratch o'yinlari: Snake, Dino, Balloon shooter, Mole strike.", "🌐 HTML/CSS va hosting."] },
           { emoji: "💡", title: "Loyiha turlari", points: ["🌐 **Sayt**: mavzuli sayt (sevimli sport, shahrim, hayvonlar ensiklopediyasi).", "🎮 **O'yin**: Scratch'da murakkab o'yin (darajalar, ball, taymer).", "🤖 **AI loyiha**: AI yordamida ertak-kitob, komiks yoki qisqa film.", "🔗 **Aralash**: sayt + ichida o'yin/video/galereya."] },
           { emoji: "📋", title: "Loyiha rejasi", points: ["Nomi va g'oyasi (1–2 gap).", "Kim uchun? (auditoriya)", "Qaysi dasturlar?", "3 ta asosiy qism.", "Muvaffaqiyat mezoni: \"tayyor\" nimani anglatadi?"] },
           { emoji: "🗓️", title: "Vaqt jadvali", points: ["23-hafta 1-kun: g'oya va reja.", "23-hafta 2-kun: asosiy ish.", "23-hafta 3-kun: yakunlash.", "24-hafta 1-kun: taqdimot!"] },
@@ -298,7 +298,7 @@ export const month6: WeekDraft[] = [
           { q: "Taqdimotdan keyin tomoshabin nima qiladi?", options: ["1 ta yoqqan narsa va 1 ta savol aytadi", "Jim o'tiradi", "Faqat tanqid qiladi", "Chiqib ketadi"], correct: 0 },
           { q: "Qaysi biri baholash mezoni emas?", options: ["G'oya", "Dizayn", "Kompyuter narxi", "Taqdimot"], correct: 2 },
           { q: "Savolga javobini bilmasangiz?", options: ["\"Yaxshi savol, buni o'rganib ko'raman\" deysiz", "Yolg'on javob berasiz", "E'tibor bermaysiz", "Xafa bo'lasiz"], correct: 0 },
-          { q: "6 oyda o'rganilmagan mavzu?", options: ["Scratch", "Photoshop", "HTML/CSS", "Avtomobil haydash"], correct: 3 },
+          { q: "6 oyda o'rganilmagan mavzu?", options: ["Scratch", "Excel", "HTML/CSS", "Avtomobil haydash"], correct: 3 },
           { q: "Yaxshi tomoshabin qanday bo'ladi?", options: ["Diqqatli va do'stona", "Telefon o'ynaydi", "Gapiradi", "Uxlaydi"], correct: 0 },
         ],
       },
@@ -336,8 +336,8 @@ export const month6: WeekDraft[] = [
         kind: "event",
         goals: ["6 oylik yo'lni birga eslash", "Yutuqlarni nishonlash", "Keyingi o'rganish yo'nalishlarini tanlash"],
         slides: [
-          { emoji: "🎓", title: "Tabriklaymiz!", points: ["Siz **72 dars**ni tamomladingiz!", "Endi siz: kompyuter ustasi, video montajchi, AI ijodkori, Scratch dasturchi, Photoshop dizayneri va veb-dasturchisiz! 🚀"] },
-          { emoji: "🗺️", title: "Bizning yo'limiz", points: ["1-oy 🖥️ Kompyuter savodxonligi.", "2-oy 🎬 Video va AI.", "3-oy 🐱 Scratch.", "4-oy 🎨 Photoshop.", "5-oy 🌐 HTML/CSS.", "6-oy 🚀 Amaliy loyihalar."] },
+          { emoji: "🎓", title: "Tabriklaymiz!", points: ["Siz **72 dars**ni tamomladingiz!", "Endi siz: kompyuter ustasi, video montajchi, AI ijodkori, Scratch o'yin yaratuvchisi va veb-dasturchisiz! 🚀"] },
+          { emoji: "🗺️", title: "Bizning yo'limiz", points: ["1-oy 🖥️ Kompyuter savodxonligi.", "2-oy 🎬 Video va AI.", "3-oy 🐱 Scratch bloklari.", "4-oy 🎮 Scratch o'yinlari.", "5-oy 🌐 HTML/CSS.", "6-oy 🚀 Amaliy loyihalar."] },
           { emoji: "🔭", title: "Keyin nima o'rganish mumkin?", points: ["🐍 **Python** — haqiqiy dasturlash tili.", "🟨 **JavaScript** — saytlarni jonlantirish.", "🎮 **Roblox Studio / Unity** — o'yin yaratish.", "🤖 **Robototexnika** — Arduino, micro:bit.", "🎨 **Figma** — UI/UX dizayn."] },
           { emoji: "💌", title: "Eslab qoling", points: ["Har kuni oz-ozdan o'rganing.", "Xato qilishdan qo'rqmang — xato ham o'qituvchi!", "Bilganingizni boshqalarga o'rgating.", "Internetda xavfsiz va halol bo'ling."] },
         ],

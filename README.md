@@ -4,11 +4,13 @@
 
 - 📚 **72 ta dars materiali** — tushuncha slaydlari, sinf ishi (qadamma-qadam), uy vazifasi, loyiha darslari uchun baholash mezonlari.
 - 📝 **Har dars uchun test** (5–7 savol, izohlar bilan) — jami 400+ savol. Javoblar serverda baholanadi, to'g'ri javoblar brauzerga yuborilmaydi.
-- 🕹️ **10 ta interaktiv ko'rgazma**: kompyuter qismlari, fayl boshqaruvchisi, mini-Paint, mini-Excel (formulalar), CapCut vaqt chizig'i, AI prompt konstruktori, tez yozish testi, Scratch bloklari jumbog'i, Photoshop qatlamlari/filtrlari, HTML/CSS jonli muharrir.
+- 🕹️ **10 ta interaktiv ko'rgazma**: kompyuter qismlari, fayl boshqaruvchisi, mini-Paint, mini-Excel (formulalar), CapCut vaqt chizig'i, AI prompt konstruktori, tez yozish testi, Scratch bloklari jumbog'i, 4 ta o'ynaladigan o'yin namunasi (Snake, ayiqli Dino, Balloon shooter, Mole strike), HTML/CSS jonli muharrir.
 - 🧑‍🏫 **O'qituvchi paneli** — guruhlar va guruh kodlari, "bugungi dars"ni belgilash, testni ochish/yopish, proyektor uchun **taqdimot rejimi** (← → , F — to'liq ekran), natijalar jadvali va CSV (Excel) eksport.
 - 🧒 **O'quvchi** — guruh kodi bilan ro'yxatdan o'tadi (email shart emas), bugungi darsni ko'radi, ochiq testni topshiradi, o'z natijalarini kuzatadi.
 
 Kurs rejasi Notion'dagi "IT kids 6 oylik ish reja" sahifasidan olingan (Excel va Scratch darslari — tegishli batafsil sahifalar asosida).
+
+Oylar: 1 — Kompyuter savodxonligi, 2 — Video va AI, 3 — Scratch bloklari va mashqlar, 4 — Scratch o'yinlari (Snake, ayiqli Google Dino, Balloon shooter, Mole strike), 5 — HTML/CSS, 6 — Web va yakuniy loyihalar.
 
 ## Tez boshlash (demo rejim)
 
