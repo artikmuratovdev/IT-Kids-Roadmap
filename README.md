@@ -32,10 +32,13 @@ Demo rejimda har bir kompyuter o'z ma'lumotini saqlaydi. Sinfdagi barcha o'quvch
 
 1. [supabase.com](https://supabase.com) da loyiha yarating.
 2. **SQL Editor** ga `supabase/migrations/0001_init.sql` faylini nusxalab, ishga tushiring (jadval va RLS xavfsizlik qoidalari).
-3. `.env.example` dan `.env.local` yarating va to'ldiring:
-   - `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` — Project Settings → API
-   - `SUPABASE_SERVICE_ROLE_KEY` — faqat serverda (ro'yxatdan o'tkazish va test natijasini yozish uchun)
-   - `TEACHER_INVITE_CODE` — o'qituvchilar ro'yxatdan o'tadigan maxfiy kod
+3. `.env.example` dan `.env.local` yarating va to'ldiring (Supabase → Project Settings → API):
+   - `NEXT_PUBLIC_SUPABASE_URL` — Project URL
+   - `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` — publishable kalit (`sb_publishable_...`)
+   - `SUPABASE_SECRET_KEY` — secret kalit (`sb_secret_...`). Faqat serverda ishlatiladi — hech qachon `NEXT_PUBLIC_` qo'shmang!
+   - `TEACHER_INVITE_CODE` — o'qituvchilar ro'yxatdan o'tadigan maxfiy kod (o'zingiz o'ylab topasiz)
+
+   Eski nomlar (`NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`) ham ishlaydi. `SUPABASE_JWKS_URL` kerak emas.
 4. [Vercel](https://vercel.com) ga repozitoriyni ulang, shu 4 ta o'zgaruvchini **Environment Variables** ga kiriting va deploy qiling.
 
 ## O'qituvchi uchun qo'llanma
