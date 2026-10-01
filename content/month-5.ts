@@ -303,7 +303,7 @@ export const month5: WeekDraft[] = [
           "3 ta kartani grid bilan 3 ustunga joylang.",
           "Footer'ga \"© 2026 Ismingiz\" yozing.",
         ],
-        homework: "Portfolio uchun kontent tayyorlang: o'zingiz haqida 3 gap, 6 ta eng yaxshi ishingiz (Scratch, Photoshop, video, taqdimot...) ro'yxati va rasmlari.",
+        homework: "Portfolio uchun kontent tayyorlang: o'zingiz haqida 3 gap, 6 ta eng yaxshi ishingiz (Scratch o'yinlari, video, AI rasm, taqdimot...) ro'yxati va rasmlari.",
         quiz: [
           { q: "Sahifa pastki qismi tegi?", options: ["<footer>", "<header>", "<nav>", "<bottom>"], correct: 0 },
           { q: "Menyu uchun semantik teg?", options: ["<nav>", "<menu-bar>", "<ul> faqat", "<section>"], correct: 0 },
@@ -348,7 +348,7 @@ export const month5: WeekDraft[] = [
         visual: "code",
         visualPreset: "portfolio",
         slides: [
-          { emoji: "🏁", title: "Yakuniy portfolio", points: ["2+ sahifa, umumiy menyu va footer.", "6+ loyiha kartasi: Word/PowerPoint, Excel, video, AI, Scratch, Photoshop.", "Chiroyli CSS dizayn."] },
+          { emoji: "🏁", title: "Yakuniy portfolio", points: ["2+ sahifa, umumiy menyu va footer.", "6+ loyiha kartasi: Word/PowerPoint, Excel, video, AI, Scratch o'yinlari (Snake, Dino, Balloon, Mole).", "Chiroyli CSS dizayn."] },
           { emoji: "🔍", title: "Sifat tekshiruvi", points: ["Barcha havolalar ishlaydimi?", "Rasmlar ochiladimi, alt bormi?", "Telefonda yaxshi ko'rinadimi?", "Imlo xatolari yo'qmi?"] },
           { emoji: "🧑‍⚖️", title: "O'zaro baholash", points: ["Sherigingiz saytini \"mehmon\" sifatida ko'rib chiqing.", "2 ta yulduz ⭐ (yoqqan narsa) + 1 ta tilak 🙏 (yaxshilash)."] },
           { emoji: "🚀", title: "Keyingi qadam", points: ["6-oyda saytingizni **internetga joylaymiz** — hamma ko'ra oladi!", "Faylni ZIP qilib saqlab qo'ying."] },

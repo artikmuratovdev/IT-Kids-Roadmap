@@ -14,7 +14,7 @@ const registry: Record<VisualKey, React.ComponentType<{ preset?: string }>> = {
   "prompt-builder": dynamic(() => import("./PromptBuilder"), { ssr: false, loading }),
   typing: dynamic(() => import("./TypingTest"), { ssr: false, loading }),
   scratch: dynamic(() => import("./ScratchBlocks"), { ssr: false, loading }),
-  layers: dynamic(() => import("./LayersDemo"), { ssr: false, loading }),
+  game: dynamic(() => import("./GameDemo"), { ssr: false, loading }),
   code: dynamic(() => import("./CodePlayground"), { ssr: false, loading }),
 };
 
@@ -27,7 +27,7 @@ export const visualTitles: Record<VisualKey, string> = {
   "prompt-builder": "AI uchun prompt konstruktori",
   typing: "Tez yozish musobaqasi",
   scratch: "Scratch bloklari jumbog'i",
-  layers: "Qatlamlar va filtrlar laboratoriyasi",
+  game: "O'yin namunasi — o'ynab ko'ring",
   code: "HTML/CSS jonli muharrir",
 };
 

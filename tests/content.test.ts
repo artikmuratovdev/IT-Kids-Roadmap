@@ -55,6 +55,18 @@ describe("kurs kontenti", () => {
     });
   });
 
+  it("Photoshop kursdan olib tashlangan", () => {
+    expect(JSON.stringify(lessons)).not.toMatch(/photoshop/i);
+  });
+
+  it("4-oy — 4 ta Scratch o'yini, har darsda o'ynaladigan namuna", () => {
+    const m4 = lessons.filter((l) => l.month === 4);
+    expect(m4).toHaveLength(12);
+    m4.forEach((l) => expect(l.visual).toBe("game"));
+    const presets = [...new Set(m4.map((l) => l.visualPreset))];
+    expect(presets).toEqual(["snake", "dino", "balloon", "mole"]);
+  });
+
   it("katalog barcha darslarni o'z ichiga oladi", () => {
     expect(catalogWeeks().flatMap((w) => w.lessons)).toHaveLength(72);
   });

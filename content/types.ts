@@ -7,7 +7,7 @@ export type VisualKey =
   | "prompt-builder"
   | "typing"
   | "scratch"
-  | "layers"
+  | "game"
   | "code";
 
 export interface Slide {
